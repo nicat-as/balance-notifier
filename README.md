@@ -16,10 +16,10 @@ First you need to configure environment variables inside [`.env`](.env) file.
 
 After that run [`docker-compose.yml`](docker-compose.yml) file:
     
-    docker-comppose up -d
+    docker-compose up -d
 
 Application will build and start new docker container.
 
 For stopping application run:
 
-    docker-comppose down --rmi all
+    docker-compose down --rmi all
