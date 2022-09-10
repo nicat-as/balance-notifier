@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  balance-notifier:
+    build:
+      context: .
+    ports:
+      - "8083:8083"
+    env_file:
+      - .env
