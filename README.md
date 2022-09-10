@@ -19,3 +19,7 @@ After that run [`docker-compose.yml`](docker-compose.yml) file:
     docker-comppose up -d
 
 Application will build and start new docker container.
+
+For stopping application run:
+
+    docker-comppose down --rmi all
