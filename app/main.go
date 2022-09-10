@@ -16,7 +16,7 @@ func main() {
 	initEnv()
 	log.Println("action.schedule.start")
 	s := gocron.NewScheduler(time.UTC)
-	accountNo := "410500D8402765243103"
+	accountNo := os.Getenv("PROVIDER.KAPITAL.ACCOUNT_NO")
 	var amount float64 = 30
 
 	s.Cron(os.Getenv("CRON.NOTIFY")).Do(notification.Notify, &amount, accountNo, provider.Kapital)
